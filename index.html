@@ -76,13 +76,13 @@
                 <p class="text-white w-2/3 mx-auto">
                     Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
                 </p>
-                <button class="btn text-xl bg-[#1DD100] border-none">Buy Tickets</button>
+                <button onclick="scrollToFunction()" class="btn text-xl bg-[#1DD100] border-none">Buy Tickets</button>
             </div>
 
          </div>
 
         <!-- card section -->
-         <div class="flex mb-10 mx-auto gap-10  items-center justify-center -translate-y-10">
+         <div class="lg:flex mb-10 mx-auto gap-10  items-center justify-center -translate-y-10">
 
             <div class="flex p-8 gap-2 rounded-2xl border-b-4 border-[#1DD100] bg-[#FFFFFF]">
                 <img src="images/people.png" alt="">
@@ -113,17 +113,17 @@
          </div>
 
          <!--Offer section  -->
-         <div class="flex flex-col items-center justify-between space-y-16 font-inter">
+         <div class="lg:flex lg:flex-col items-center justify-between space-y-16 font-inter">
             <h2 class="text-4xl font-bold">Best offers for you</h2>
-            <div class="flex gap-4 items-center justify-between w-full"> 
+            <div class="lg:flex gap-4 items-center justify-between w-full m-4"> 
                 <!-- card 1 -->
-                <div class="flex items-center justify-center rounded-xl bg-[#FFBF0F] flex-1 p-[52px] w-[573px] max-h-[224px] gap-8">
+                <div class="lg:flex items-center justify-center rounded-xl bg-[#FFBF0F] flex-1 p-[52px] lg:w-[573px] max-h-[224px] gap-8">
                     <div class="">
                         <h4 class="font-bold text-3xl">15% OFF</h4>
                         <p class="font-bold">on your next purchase</p>
                         <p class="text-xs mt-1 text-gray-700">use by January 2024</p>
                     </div>
-                    <img src="images/info-devider.png" alt="" class="max-h-[224px]">
+                    <img src="images/info-devider.png" alt="" class="max-h-[224px] hidden lg:flex">
                     <div>
                         <h5 class="font-bold text-xl">NEW15</h5>
                         <p class="text-xs mt-1 text-gray-700">Coupon Code</p>
@@ -132,13 +132,13 @@
                 </div>
 
                 <!-- card-2 -->
-                <div class="flex items-center justify-center rounded-xl  bg-[#F78C9C] flex-1 p-[52px] w-[573px] max-h-[224px] gap-8">
+                <div class="lg:flex items-center justify-center rounded-xl  bg-[#F78C9C] flex-1 p-[52px] lg:w-[573px] max-h-[224px] gap-8">
                     <div class="">
                         <h4 class="font-bold text-3xl">20% OFF</h4>
                         <p class="font-bold">on your next purchase</p>
                         <p class="text-xs mt-1 text-gray-700">use by January 2024</p>
                     </div>
-                    <img src="images/info-devider.png" alt="" class="max-h-[224px]">
+                    <img src="images/info-devider.png" alt="" class="max-h-[224px] hidden lg:flex">
                     <div>
                         <h5 class="font-bold text-xl">Couple 20</h5>
                         <p class="text-xs mt-1 text-gray-700">Coupon Code</p>
@@ -161,7 +161,7 @@
         <p class="cmn-text">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
 
 
-        <div class="flex gap-4 bg-white rounded-xl w-full justify-around">
+        <div class="lg:flex gap-4 bg-white rounded-xl w-full justify-around">
           <div class="flex flex-col bg-white">
 
             <div class="flex flex-col items-center justify-between rounded-2xl w-full gap-5 p-8 bg-white h-full">
@@ -208,7 +208,7 @@
           </div>
 
 
-          <div class="">
+          <div class="hidden lg:flex">
             <img src="images/info-devider.png" alt="">
           </div>
 
@@ -230,9 +230,9 @@
 
       <!-- seat section -->
        <section id="seat-section" class="container mt-5 mx-auto rounded-xl bg-[#FFFFFF]">
-        <div class="flex flex-1">
+        <div class="lg:flex flex-1">
           <!-- seat -->
-          <div class="flex flex-col border-r-2 border-dotted border-[#0307124D] gap-4 p-4 w-3/5">
+          <div class="flex flex-col lg:border-r-2 border-dotted border-[#0307124D] gap-4 p-4 w-3/5">
             <h4 class="texl-3xl font-bold">Select Your Seat</h4>
             <hr>
             <!-- first line -->
@@ -259,76 +259,76 @@
           <div id="" class="flex gap-2 items-center justify-around">
             <p class="inline">A</p>
             <button class="btn seat px-10">A1</button>
-            <button class="btn seat px-10 mr-3">A2</button>
-            <button class="btn seat px-10 ml-3">A3</button>
+            <button class="btn seat px-10 lg:mr-3">A2</button>
+            <button class="btn seat px-10 lg:ml-3">A3</button>
             <button class="btn seat px-10">A4</button>
           </div>
 
           <!-- Forth line -->
-          <div id="" class="flex gap-3 items-center justify-around">
+          <div id="" class="flex gap-2 items-center justify-around">
             <p class="inline">C</p>
             <button class="btn seat px-10">B1</button>
-            <button class="btn seat px-10  mr-3">B2</button>
-            <button class="btn seat px-10  ml-3">B3</button>
+            <button class="btn seat px-10 lg:mr-3">B2</button>
+            <button class="btn seat px-10 lg:ml-3">B3</button>
             <button class="btn seat px-10">B4</button>
           </div>
           <!-- fifth line -->
-          <div id="" class="flex gap-3 items-center justify-around">
+          <div id="" class="flex gap-2 items-center justify-around">
             <p class="inline">C</p>
             <button class="btn seat px-10">C1</button>
-            <button class="btn seat px-10 mr-3">C2</button>
-            <button class="btn seat px-10  ml-3">C3</button>
+            <button class="btn seat px-10 lg:mr-3">C2</button>
+            <button class="btn seat px-10  lg:ml-3">C3</button>
             <button class="btn seat px-10">C4</button>
           </div>
 
-          <div id="" class="flex gap-3 items-center justify-around">
+          <div id="" class="flex gap-2 items-center justify-around">
             <p class="inline">D</p>
             <button class="btn seat px-10">D1</button>
-            <button class="btn seat px-10 mr-3">D2</button>
-            <button class="btn seat px-10 ml-3">D3</button>
+            <button class="btn seat px-10 lg:mr-3">D2</button>
+            <button class="btn seat px-10 lg:ml-3">D3</button>
             <button class="btn seat px-10">D4</button>
           </div>
 
-         <div id="" class="flex gap-3 items-center justify-around">
+         <div id="" class="flex gap-2 items-center justify-around">
             <p class="inline">E</p>
             <button class="btn seat px-10">E1</button>
-            <button class="btn seat px-10 mr-3">E2</button>
-            <button class="btn seat px-10  ml-3">E3</button>
+            <button class="btn seat px-10 lg:mr-3">E2</button>
+            <button class="btn seat px-10  lg:ml-3">E3</button>
             <button class="btn seat px-10">E4</button>
           </div>
-          <div id="" class="flex gap-3 items-center justify-around">
+          <div id="" class="flex gap-2 items-center justify-around">
             <p class="inline">F</p>
             <button class="btn seat px-10">F1</button>
-            <button class="btn seat px-10 mr-3">F2</button>
-            <button class="btn seat px-10  ml-3">F3</button>
+            <button class="btn seat px-10 lg:mr-3">F2</button>
+            <button class="btn seat px-10  lg:ml-3">F3</button>
             <button class="btn seat px-10">F4</button>
           </div>
-          <div id="" class="flex gap-3 items-center justify-around">
+          <div id="" class="flex gap-2 items-center justify-around">
             <p class="inline">G</p>
             <button class="btn seat px-10">G1</button>
-            <button class="btn seat px-10 mr-3">G2</button>
-            <button class="btn seat px-10  ml-3">G3</button>
+            <button class="btn seat px-10 lg:mr-3">G2</button>
+            <button class="btn seat px-10  lg:ml-3">G3</button>
             <button class="btn seat px-10">G4</button>
           </div>
-          <div id="" class="flex gap-3 items-center justify-around">
+          <div id="" class="flex gap-2 items-center justify-around">
             <p class="inline">H</p>
             <button class="btn seat px-10">H1</button>
-            <button class="btn seat px-10 mr-3">H2</button>
-            <button class="btn seat px-10  ml-3">H3</button>
+            <button class="btn seat px-10 lg:mr-3">H2</button>
+            <button class="btn seat px-10 lg:ml-3">H3</button>
             <button class="btn seat px-10">H4</button>
           </div>
-          <div id="" class="flex gap-3 items-center justify-around">
+          <div id="" class="flex gap-2 items-center justify-around">
             <p class="inline">I</p>
             <button class="btn seat px-10">I1</button>
-            <button class="btn seat px-10 mr-3">I2</button>
-            <button class="btn seat px-10 ml-3">I3</button>
+            <button class="btn seat px-10 lg:mr-3">I2</button>
+            <button class="btn seat px-10 lg:ml-3">I3</button>
             <button class="btn seat px-10">I4</button>
           </div>
-          <div id="" class="flex gap-3 items-center justify-around">
+          <div id="" class="flex gap-2 items-center justify-around">
             <p class="inline">J</p>
             <button class="btn seat px-10">J1</button>
-            <button class="btn seat px-10 mr-3">J2</button>
-            <button class="btn seat px-10 ml-3">J3</button>
+            <button class="btn seat px-10 lg:mr-3">J2</button>
+            <button class="btn seat px-10 lg:ml-3">J3</button>
             <button class="btn seat px-10">J4</button>
           </div>
 
@@ -362,7 +362,7 @@
                 <p class="text-xl font-semibold">Total Price</p>
                 <p class="text-xl font-semibold">BDT <span id="total-price">0</span></p>
               </div>
-              <div class="flex p-3 bg-[#FFFFFF] rounded-xl justify-between">
+              <div id="coupon-div" class="flex p-3 bg-[#FFFFFF] rounded-xl justify-between">
               <input id="coupon" class="shadow-none px-3" placeholder="Have any copupon?" type="text">
               <button id="apply" class="btn px-4 bg-[#1DD100] text-white font-semibold"> Apply </button>
               </div>
@@ -419,9 +419,9 @@
     <!-- Footer section -->
 
     <footer id="footer" class="bg-[#030712] p-20 flex flex-col gap-5 text-white">
-      <div class="flex items-center justify-between">
+      <div class="lg:flex items-center justify-between">
         <div class="flex flex-col">
-          <h3 class="text-3xl font-semibold">Arid-Ticket</h3>
+          <h3 class="text-3xl font-semibold">Arif-Ticket</h3>
           <p class="text-[#FFFFFFCC]">P-Ticket is a digital platform to make your <br>daily commuting better.</p>
         </div>
         <div class="space-y-2 ">
@@ -439,7 +439,7 @@
 
       <hr>
 
-      <div class="flex items-center justify-between">
+      <div class="lg:flex items-center justify-between">
         <p class="text-xs text-[#FFFFFFB3]">@all rights reserved, P-Ticket services limited.2024</p>
         <div class="flex space-x-5">
           <p class="text-sm">Terms & condition</p>

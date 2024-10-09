@@ -1,5 +1,14 @@
 // making active btns
 let convertedGtPrice1,convertedGtPrice2;
+
+
+function scrollToFunction(){
+    const paribahan = document.getElementById("paribahan");
+    paribahan.scrollIntoView({ behavior: "smooth" }); 
+}
+
+
+
 const allBtn = document.getElementsByClassName("seat");
 
 for(const btn of allBtn){
@@ -8,6 +17,7 @@ for(const btn of allBtn){
     const busSeat = document.getElementById("bus-seat").innerText;
     const busSeatNum = parseInt(busSeat);
     const netSeat = busSeatNum - 1;
+   
 
     const seatNum = document.getElementById("seat-num").innerText;
 
@@ -29,6 +39,7 @@ for(const btn of allBtn){
 
         const netPrice = totalSeat*550;
         const gtPrice = totalSeat*550;
+   
         convertedGtPrice1 = gtPrice - (gtPrice*.20);
         convertedGtPrice2 = gtPrice - (gtPrice*.15);
 
@@ -43,36 +54,33 @@ const offer = document.getElementById("apply");
 offer.addEventListener("click",function name(event) {
     const coupon = document.getElementById("coupon");
     if(coupon.value === "Couple 20"){
-        document.getElementById("grand-total").innerText = convertedGtPrice1; 
+        document.getElementById("grand-total").innerText = convertedGtPrice1;
+        hideElementById("coupon-div");
     }
-    if(coupon.value === "NEW15"){
-        document.getElementById("grand-total").innerText = convertedGtPrice2;  
+    else if(coupon.value === "NEW15"){
+        document.getElementById("grand-total").innerText = convertedGtPrice2; 
+        hideElementById("coupon-div"); 
+    }
+    else{
+        alert("Enter Right coupon");
     }
 })
 
 
 
 const next = document.getElementById("next");
+
+
 next.addEventListener("click",function() {
-    const email = document.getElementById("email").value;
-    const passenger = document.getElementById("passenger").value;
+    
     const phone = document.getElementById("phone").value;
-    // if(email === undefined || passenger === undefined || phone === undefined){
-    //     alert("data");
-    // }
+    
     console.log(typeof email);
     console.log(typeof passenger);
     console.log(typeof phone);
   
-    if(email === ""){
-        alert("Enter Email");
-        
-    }
-    else if(passenger === ""){
-        alert("Enter Passenger");
-        
-    }
-    else if(phone === ""){
+    
+    if(phone === ""){
         alert("Enter Phone Number");   
     }
     else{
@@ -84,7 +92,5 @@ next.addEventListener("click",function() {
         showElementById("success");
 
      }
-
-   
     
 })
